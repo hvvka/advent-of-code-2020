@@ -8,7 +8,6 @@ fun main() {
     val map: List<List<Char>> = fileLines.map { it.toList() }
     val answer = Map(map, Location(0, 0, 3, 1)).countHitTrees()
     println(answer)
-
 }
 
 class Map(private val map: List<List<Char>>, private val visitor: Location) {
